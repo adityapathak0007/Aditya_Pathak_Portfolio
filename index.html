@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+      <link rel="icon" href="Images/logo.png" type="image/png" sizes="16x16">
     <title>Aditya Pathak Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -315,71 +315,82 @@
         </div>
     </nav>
 
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(#);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hi!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Aditya Pathak</span></h1>
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                    <div class="one-third js-fullheight order-md-last img" style="background-image:url(Images/Gif.gif);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hi!</span>
+                            <h1 class="mb-4 mt-3">I'm <span>Aditya Pathak</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+                            <!-- Element to contain animated typing -->
+                            <span id="typing-animation"></span>
 
-						<script>
+                            <script>
+                                // Initialize the typing animation
+                                const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                                // Create an array of typing text
+                                const typingTexts = [
+                                    'Data Scientist  ',
+                                    'Data Analyst  ',
+                                    'Coordinator  ',
+                                    'Learning Facilitator   ',
+                                ];
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Scientist  ',
-						'Data Analyst  ',
-						'Coordinator  ',
-						'Learning Facilitator   ',
-						];
+                                // Create a function to display the typing animation for a given text
+                                function playTypingAnimation(text) {
+                                    // Loop through each character and add it to the element
+                                    for (let i = 0; i < text.length; i++) {
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent += text[i];
+                                        }, i * 200); // Increase the delay to slow down the typing animation
+                                    }
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+                                    // Once the animation is complete, reset the text and start over
+                                    setTimeout(() => {
+                                        typingAnimationElement.textContent = '';
+                                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                    }, text.length * 200);
+                                }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+                                // Start the typing animation loop
+                                playTypingAnimation(typingTexts[0]);
+                            </script>
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+                            <br>
+                            <br>
+                            <h2>Unlocking the Power of Data with Passion and Precision</h2>
+                            <p>
+                                <a href="https://www.linkedin.com/in/adityapathak07/" class="btn btn-primary py-3 px-4">LinkedIn</a>
+                                <a href="https://github.com/adityapathak0007?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-						</script>
+<style>
+.hero .img {
+    background-color: transparent; /* Ensure background is transparent */
+    background-size: contain; /* Ensure the image fits within the div */
+    background-position: center; /* Center the image */
+    height: 30vh; /* Set a specific height to keep it small */
+    width: 10%; /* Set a very small width */
+    margin-left: auto; /* Push the image to the right */
+    margin-right: 10px; /* Add right margin to avoid overlap with text */
+}
+</style>
 
-						<br>
-						<br>
-			            <h2>Unlocking the Power of Data with Passion and Precision</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/adityapathak07/" class="btn btn-primary py-3 px-4">LinkedIn</a>
-							<a href="https://github.com/adityapathak0007?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
 
 
 
