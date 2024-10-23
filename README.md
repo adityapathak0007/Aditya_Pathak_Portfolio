@@ -20,23 +20,18 @@ This portfolio contains a collection of my work, highlighting various projects t
    - [View Project](https://github.com/adityapathak0007/Olympics_Data_Analysis)
    - An analysis of Olympic data, featuring medal tallies, country-wise analysis, and athlete success rates.
 
-## Skills
+2. **Explore More Projects Here**🌟
+   - [View Projects](https://github.com/adityapathak0007?tab=repositories)
+  
+   
+## Skills and Technologies for the Portfolio Website 🌐
 
-- **Programming Languages:** Python, SQL
-- **Data Analysis Tools:** Pandas, NumPy
-- **Data Visualization:** Matplotlib, Seaborn, Tableau, Power BI
-- **Machine Learning:** Scikit-Learn, NLTK
-- **Web Development:** Streamlit, HTML, CSS, JavaScript
-- **Other Skills:** Git, JIRA, Google Analytics, SEO
-
-## Technologies Used
-
-- **Python** 🐍: Core programming language for data analysis.
-- **Streamlit** 📈: Framework for building interactive web applications.
-- **Pandas** 🗂️: Library for data manipulation and analysis.
-- **Matplotlib & Seaborn** 📊: Libraries for data visualization.
-- **Scikit-Learn** 🛠️: Machine learning library for predictive modeling.
-- **Tableau & Power BI** 📊: Tools for data visualization and business intelligence.
+- **HTML** 🖥️: Used for structuring the content and layout of the web pages.
+- **CSS** 🎨: Applied for styling and enhancing the visual presentation of the website.
+- **JavaScript** ⚙️: Implemented for adding interactivity and dynamic features to the web pages.
+- **Bootstrap** 💼: Utilized for responsive design, ensuring the website looks great on various devices.
+- **Git** 🐙: Version control system used for tracking changes and collaborating on the project.
+- **GitHub Pages** 📄: Hosting platform used to publish the website online.
 
 ## How to View the Website
 
