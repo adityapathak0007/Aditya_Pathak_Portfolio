@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <title>Aditya Pathak Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+
+<style>
+    /* Scroll to Top Button Styles */
+    #scrollToTop {
+        position: fixed;
+        bottom: 30px; /* Distance from the bottom */
+        right: 30px; /* Distance from the right */
+        display: none; /* Hidden by default */
+        z-index: 1000; /* Ensure it appears above other elements */
+        font-size: 16px; /* Font size */
+        padding: 12px 20px; /* Padding for the button */
+        border-radius: 30px; /* Rounded corners for a modern look */
+        text-decoration: none; /* Remove underline */
+        background-color: #f8f9fa; /* Light background color */
+        color: #343a40; /* Dark text color for better readability */
+        border: 1px solid #007bff; /* Border color */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        font-weight: bold; /* Bold text for emphasis */
+        font-family: 'Arial', sans-serif; /* Consistent font family */
+    }
+
+    #scrollToTop:hover {
+        background-color: #ffc107; /* Yellow color on hover */
+        color: white; /* Change text color to white on hover */
+        transform: scale(1.05); /* Slight scale on hover */
+    }
+</style>
+
+<!-- Scroll to Top Button -->
+<a href="#" id="scrollToTop" class="btn">Top</a>
+
+<script>
+    // Show or hide the button based on scroll position
+    window.onscroll = function() {
+        const button = document.getElementById("scrollToTop");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            button.style.display = "block"; // Show the button
+        } else {
+            button.style.display = "none"; // Hide the button
+        }
+    };
+
+    // Smooth scroll to top when button is clicked
+    document.getElementById("scrollToTop").onclick = function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scroll
+        });
+    };
+</script>
+
+
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Aditya Pathak</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(#);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hi!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Aditya Pathak</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist  ',
+						'Data Analyst  ',
+						'Coordinator  ',
+						'Learning Facilitator   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Unlocking the Power of Data with Passion and Precision</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/adityapathak07/" class="btn btn-primary py-3 px-4">LinkedIn</a>
+							<a href="https://github.com/adityapathak0007?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-5 d-flex">
+                    <div class="about-info w-100">
+                        <div class="overlay">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Name: </span> <span>Aditya Pathak</span></p>
+                                        <p><span class="title-s">Job Role: </span> <span>Coordinator</span></p>
+                                        <p><span class="title-s">Experience: </span> <span>3 Years</span></p>
+                                        <p><span class="title-s">Address: </span> <span>Dharashiv, India.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-mf">
+                                <p class="title-s">Skills</p>
+                                <span>PYTHON</span> <span class="pull-right">98%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="98" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+
+                                <span>SQL</span> <span class="pull-right">90%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+
+                                <span>Data Visualization</span> <span class="pull-right">95%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+
+                                <span>Statistical Analysis</span> <span class="pull-right">90%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+
+                                <span>Machine Learning</span> <span class="pull-right">92%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+
+                                <!-- New Skill Below Machine Learning -->
+                                <span>Deep Learning</span> <span class="pull-right">90%</span>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                                <!-- End of New Skill -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h1 class="big">About</h1>
+                            <h2 class="mb-4">About Me</h2>
+                            <p style="text-align: justify;">As a dedicated Learning Facilitator and Coordinator at MKCL's ALC, I am passionate about delivering high-quality educational experiences and leveraging technology to enhance learning. With expertise in data science, including machine learning and data visualization, I possess strong skills in Python, SQL, and tools like Tableau and Power BI. My goal is to utilize data mining techniques and natural language processing (NLP) to uncover insights and drive data-driven decision-making. I am actively seeking opportunities in data science.</p>
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+                                <li class="d-flex"><span>Education:</span> <span>Master of Science in Computer Science</span></li>
+                                <li class="d-flex"><span>Language:</span> <span>English, Hindi, Marathi</span></li>
+                                <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Tableau</span></li>
+                                <li class="d-flex"><span>Other Skills:</span> <span>HTML, CSS, Bootstrap, JavaScript, Income Tax GST Consultant</span></li>
+                                <li class="d-flex"><span>Interest:</span> <span>Playing and watching cricket, as well as traveling with friends</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                        <div class="text">
+                            <p class="mb-4">
+                                <span class="number" data-number="25">0</span> <span>+</span>
+                                <span>&nbsp; Projects completed</span>
+                            </p>
+                           <!-- <p><a href="https://www.linkedin.com/in/adityapathak07/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Aspiring data scientist with strong expertise in machine learning and statistical analysis. Proficient in Python libraries like NumPy, Pandas, and Sci-kit Learn, alongside SQL and data visualization tools such as Tableau and Power BI.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb2022-Present</span>
+						<h2>Coordinator and Learning Facilitator</h2>
+						<span class="position">Anna Infotech</span>
+						<p class="mt-4">Authorized Learning Center of Maharashtra Knowledge Corporation Ltd.
+							<ul>
+								<li>Training Delivery: Led MS-CIT and KLiC courses, covering programming (Python, Java, C, C++), web design (HTML, CSS, JavaScript), advanced Excel, and Tally Prime with GST.</li>
+								<li>Curriculum Development: Created comprehensive curricula for KLiC courses, enhancing student understanding and engagement.</li>
+								<li>Operations Coordination: Managed center operations and schedules, ensuring smooth training sessions and tracking student progress.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June2020-Jan2022</span>
+						<h2>Tax Consultant</h2>
+						<span class="position">Tax Consultancy Office</span>
+						<p class="mt-4">A tax consultancy office offers expert advice and services on tax planning for individuals and businesses.
+							<ul>
+								<li>Accumulated over a year of experience as a Tax Consultant, specializing in the filing of Income Tax (IT) returns, Electronic Tax Deducted at Source (ETDS) returns, and Goods and Services Tax (GST) returns.</li>
+								<li>Developed a deep understanding of tax laws and regulations, ensuring compliance for individuals and businesses while maximizing potential deductions.</li>
+								<li>Provided personalized tax planning and advisory services to clients, helping them navigate complex tax issues and optimize their tax liabilities.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2024</span>
+    					<h2>Master of Science in Computer Science</h2>
+    					<span class="position">K.T. Patil College of Computer Science, Dharashiv.</span>
+    					<p class="mt-4">Percentage: 75.10</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2021</span>
+    					<h2>Bachelor of Science in Computer Science</h2>
+    					<span class="position">K.T. Patil College of Computer Science, Dharashiv.</span>
+    					<p class="mt-4">Percentage: 74.87</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1rW_Cc8ypCBcdrB36ADTQifF7BJ4Ywm9B/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Sample Data Analytics and Data Science Projects on Python, SQL, Advance Excel, Power BI, and Machine Learning</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityapathak0007/MovieRecommenderSystem" class="block-20 zoom-effect" style="background-image: url('movie.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/MovieRecommenderSystem">Movie Recommender System 🎬</a></h3>
+                <p>Developed a Movie Recommender System using Python and Streamlit to provide personalized movie recommendations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityapathak0007/whatsapp_chat_analysis" class="block-20 zoom-effect" style="background-image: url('Whatsappchat.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/whatsapp_chat_analysis">WhatsApp Chat Analysis 📱</a></h3>
+                <p>This project is a web application developed using Streamlit, designed to provide insights and visualizations based on WhatsApp chat data.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/adityapathak0007/Car_Price_Predictor" class="block-20 zoom-effect" style="background-image: url('car price.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/Car_Price_Predictor">Car Price Prediction Application🚗</a></h3>
+                <p>This project encompasses two implementations of a Car Price Prediction Application, developed using Flask and Streamlit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+          <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityapathak0007/Olympics_Data_Analysis" class="block-20 zoom-effect" style="background-image: url('olympics.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/Olympics_Data_Analysis">Olympics Data Analysis 🏅</a></h3>
+                <p>The Olympics Data Analysis is a web application built using Streamlit. It provides insights and visualizations based on Olympic athlete data.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityapathak0007/SMS_Email_Spam_Classifier" class="block-20 zoom-effect" style="background-image: url('spam.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/SMS_Email_Spam_Classifier">SMS Email Spam Classifier ✉️</a></h3>
+                <p>This project is an SMS Spam Detection system that uses Natural Language Processing (NLP) and Machine Learning techniques to classify messages as spam or not spam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/adityapathak0007/Pizza_Sales_Dashboard_and_SQL_Analysis" class="block-20 zoom-effect" style="background-image: url('Dashboard1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/Pizza_Sales_Dashboard_and_SQL_Analysis">Pizza Sales Report and SQL Analysis🍕</a></h3>
+                <p>I developed a comprehensive Power BI dashboard and accompanying PowerPoint presentation to analyze pizza sales data.</p>
+              </div>
+            </div>
+          </div>
+
+     <br>
+          <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityapathak0007/BlinkIT_Dashboard" class="block-20 zoom-effect" style="background-image: url('Dashboard blinkit.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/BlinkIT_Dashboard">BlinkIT Dashboard🌟</a></h3>
+                <p>I developed an interactive and insightful Power BI dashboard for BlinkIT, designed to visualize key operational metrics and drive data-driven decision-making.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/adityapathak0007/Customer_Churn_Analysis" class="block-20 zoom-effect" style="background-image: url('churn.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/Customer_Churn_Analysis">Customer Churn Analysis 📊</a></h3>
+                <p>This project involves an Exploratory Data Analysis (EDA) of customer churn data using Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/adityapathak0007/Advanced-Excel-Data-Analysis-Project" class="block-20 zoom-effect" style="background-image: url('Dashboard.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/adityapathak0007/Advanced-Excel-Data-Analysis-Project">Advanced Excel Data Analysis Project🌟</a></h3>
+                <p>I developed an advanced data analysis project using Microsoft Excel to gain deep insights from complex datasets.</p>
+              </div>
+            </div>
+          </div>
+
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+  <div class="container">
+    <div class="row d-md-flex align-items-center">
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="4">0</strong>
+            <span>Years of Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="400">0</strong>
+            <span>Students Guided (+)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="98">0</strong>
+            <span>Success Rate (%)</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+        <div class="block-18">
+          <div class="text">
+            <strong class="number" data-number="30">0</strong>
+            <span>Projects Completed (+)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ftco-section ftco-hireme img margin-top" style="background-image: url(DataScience1.jpg); background-size: cover; background-position: center; padding: 60px 0;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+                <h2 class="display-4 font-weight-bold text-white">Turning Data into Impactful Solutions</h2>
+                <div class="heading">
+                    <h4 class="font-italic mt-4 text-white">Solving real-world business problems and uncovering data-driven insights.</h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="ftco-section text-center">
+    <div class="container">
+        <h2 class="display-4 font-weight-bold">Explore More Projects</h2>
+        <h4 class="font-italic mt-4">Harnessing the Power of Data to Drive Innovation and Results</h4>
+        <p class="mt-3">Discover more projects showcasing my skills in data analytics, machine learning, and more!</p>
+        <br>
+        <p>
+            <a href="https://github.com/adityapathak0007?tab=repositories" class="btn btn-primary py-3 px-5" style="font-size: 18px; font-weight: 600; border-radius: 50px; text-decoration: none; transition: background-color 0.3s, transform 0.3s;">
+                Explore My GitHub Portfolio
+            </a>
+        </p>
+    </div>
+</section>
+
+
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Get in Touch</h1>
+        <h2 class="mb-4">Get in Touch</h2>
+        <p>Feel free to reach out using any of the methods below.</p>
+      </div>
+    </div>
+
+    <div class="row d-flex contact-info mb-5">
+      <!-- Address Section -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center icon-box" onclick="toggleVisibility('addressDetails')">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Location</h3>
+          <p id="addressDetails" style="display: none;">Dharashiv, Maharashtra, India</p>
+        </div>
+      </div>
+
+      <!-- Phone Section (with direct call feature) -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <a href="tel:+918459919830">
+            <div class="icon d-flex align-items-center justify-content-center icon-box">
+              <span class="icon-phone2"></span>
+            </div>
+          </a>
+          <h3 class="mb-4">Phone</h3>
+          <!-- Toggleable phone details in case user wants more options -->
+          <p id="phoneDetails" style="display: none;">
+            <a href="tel:+918459919830">8459919830</a><br>
+          </p>
+        </div>
+      </div>
+
+      <!-- Email Section -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <a href="mailto:adityapathak034@gmail.com">
+            <div class="icon d-flex align-items-center justify-content-center icon-box">
+              <span class="icon-paper-plane"></span>
+            </div>
+          </a>
+          <h3 class="mb-4">Email</h3>
+        </div>
+      </div>
+
+      <!-- Resume Section -->
+      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+        <div class="align-self-stretch box p-4 text-center">
+          <a href="https://drive.google.com/file/d/1rW_Cc8ypCBcdrB36ADTQifF7BJ4Ywm9B/view?usp=drive_link" target="_blank">
+            <div class="icon d-flex align-items-center justify-content-center icon-box">
+              <span class="icon-globe"></span>
+            </div>
+          </a>
+          <h3 class="mb-4">Resume</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- CSS Styles for Better Interaction -->
+<style>
+  .icon-box {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    color: #333;
+    font-weight: 600;
+  }
+
+  p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+  }
+
+  p a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<!-- JavaScript for Toggling -->
+<script>
+  function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+
+
+
+
+
+		  <div class="container">
+    <br>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+            <h2>
+                Have a <span>Question?</span>
+                <a href="https://forms.gle/WLbQbXgeJeSnpLww5" class="btn btn-primary py-3 px-5" id="question-button">Click Here</a>
+            </h2>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Button styles */
+    .btn-primary {
+        position: relative;
+        overflow: hidden;
+        transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+        color: #fff; /* White text color */
+    }
+
+    .btn-primary::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.5s ease;
+        z-index: 0; /* Behind the button text */
+    }
+
+    .btn-primary:hover {
+        background: #e6a835; /* Darken the background on hover */
+        transform: translateY(-2px); /* Slightly raise the button */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    }
+
+    .btn-primary:hover::after {
+        transform: translate(-50%, -50%) scale(1); /* Show the ripple effect on hover */
+    }
+
+    .btn-primary:active {
+        transform: translateY(0); /* Reset the transform when clicked */
+        box-shadow: none; /* Remove shadow when clicked */
+    }
+
+    .btn-primary span {
+        position: relative;
+        z-index: 1; /* Bring the text above the ripple effect */
+    }
+</style>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/adityapathak0007"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/adityapathak07/"><span class="icon-linkedin"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.instagram.com/adityapathak_07/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://wa.me/8459919830"><span class="icon-whatsapp"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.facebook.com/adityapathak07/"><span class="icon-facebook"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
