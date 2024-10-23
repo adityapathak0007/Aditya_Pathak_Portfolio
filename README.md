@@ -1,46 +1,58 @@
 # Aditya Pathak's Portfolio 🌟
 
-Welcome to my portfolio! I am Aditya Pathak, a passionate Data Scientist and Learning Facilitator with a focus on data-driven solutions. This repository showcases my work, projects, and skills in data science, analytics, and related fields.
+Welcome to my online portfolio! This website showcases my projects, skills, and experiences in data science and analytics.
+You can view my portfolio online at the following link:
 
-## Table of Contents 📚
+- [Aditya Pathak Portfolio](https://adityapathak0007.github.io/Aditya_Pathak_Portfolio/)
 
-- [About Me](#about-me)
-- [Skills](#skills)
-- [Projects](#projects)
-- [Contact](#contact)
 
-## About Me 👤
+## Overview
 
-As a dedicated Learning Facilitator and Coordinator at MKCL's ALC, I leverage technology to enhance educational experiences. With over 3 years of experience in data science, I possess strong skills in machine learning, data visualization, and statistical analysis.
+This portfolio contains a collection of my work, highlighting various projects that demonstrate my expertise in data analysis, machine learning, and data visualization. My goal is to leverage data to drive actionable insights and create impactful solutions.
 
-## Skills 💻
+## Projects Included
 
-- **Programming Languages:** Python, SQL, HTML, CSS, JavaScript
-- **Data Science Tools:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- **BI Tools:** Microsoft Power BI, Tableau
-- **Other Skills:** Deep Learning, Data Mining, Natural Language Processing (NLP)
+1. **WhatsApp Chat Analysis** 📱
+   - [View Project](https://whatsappchatanalysis-5fdc65fn64oswe8ph3odpy.streamlit.app/)
+   - A web application for analyzing WhatsApp chat data, providing insights on message statistics, user activity, and more.
 
-## Projects 🚀
+2. **Olympics Data Analysis** 🥇
+   - [View Project](https://github.com/adityapathak0007/Olympics_Data_Analysis)
+   - An analysis of Olympic data, featuring medal tallies, country-wise analysis, and athlete success rates.
 
-This portfolio includes various projects that highlight my capabilities. Here are a few notable ones:
+## Skills
 
-1. **Olympics Data Analysis** 🥇  
-   An in-depth analysis of Olympic data, visualizing medal counts and athlete performances. [View Project](https://github.com/adityapathak0007/Olympics_Data_Analysis)
+- **Programming Languages:** Python, SQL
+- **Data Analysis Tools:** Pandas, NumPy
+- **Data Visualization:** Matplotlib, Seaborn, Tableau, Power BI
+- **Machine Learning:** Scikit-Learn, NLTK
+- **Web Development:** Streamlit, HTML, CSS, JavaScript
+- **Other Skills:** Git, JIRA, Google Analytics, SEO
 
-2. **WhatsApp Chat Analysis** 📱  
-   A Streamlit app for analyzing WhatsApp chats, providing insights into conversations and interactions. [View Project](https://github.com/adityapathak0007/WhatsApp_Chat_Analysis)
+## Technologies Used
 
-3. **Explore More Projects Here** 🔍  
-   [Click Here](https://github.com/adityapathak0007?tab=repositories)
+- **Python** 🐍: Core programming language for data analysis.
+- **Streamlit** 📈: Framework for building interactive web applications.
+- **Pandas** 🗂️: Library for data manipulation and analysis.
+- **Matplotlib & Seaborn** 📊: Libraries for data visualization.
+- **Scikit-Learn** 🛠️: Machine learning library for predictive modeling.
+- **Tableau & Power BI** 📊: Tools for data visualization and business intelligence.
 
-## Contact 📬
+## How to View the Website
 
-Feel free to reach out to me for collaborations, inquiries, or just a chat!
+You can view my portfolio online at the following link:
 
-- **Email:** [adityapathak034@gmail.com](mailto:adityapathak034@gmail.com)
-- **LinkedIn:** [Aditya Pathak](https://www.linkedin.com/in/adityapathak07/)
-- **GitHub:** [Aditya Pathak's GitHub](https://github.com/adityapathak0007)
+- [Aditya Pathak Portfolio](https://adityapathak0007.github.io/Aditya_Pathak_Portfolio/)
 
----
+## Contact
 
-Thank you for visiting my portfolio! I'm excited to connect and explore new opportunities. 🤝
+For any questions, collaboration opportunities, or feedback, feel free to reach out:
+
+- **Aditya Pathak** 👤
+- **Email:** [adityapathak034@gmail.com](mailto:adityapathak034@gmail.com) 📧
+- **GitHub:** [adityapathak0007](https://github.com/adityapathak0007) 🐙
+- **LinkedIn:** [adityapathak07](https://www.linkedin.com/in/adityapathak07) 🔗
+
+## Thank You! 🙏
+
+Thank you for visiting my portfolio! I hope you find my projects interesting and insightful.
