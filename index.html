@@ -173,24 +173,148 @@
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Aditya Pathak</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+  <!-- CSS Styles -->
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            background-color: #000; /* Dark background for the navbar */
+            padding: 10px 20px;
+        }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar-toggler {
+            border-color: transparent;
+        }
+
+        .navbar-toggler .oi-menu {
+            color: #fff;
+        }
+
+        /* Social Media Icons Styles */
+        .navbar-nav.social-media-icons li a {
+            color: #fff; /* Keeps the icons white as default */
+            font-size: 20px; /* Icon size */
+            padding: 0 10px; /* Space between icons */
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+        }
+
+            /* Hover Effects for Icons */
+            .navbar-nav.social-media-icons li a:hover {
+            color: #ffaa00; /* Change color on hover (gold) */
+            transform: scale(1.2); /* Slightly increase the size on hover */
+        }
+
+        /* Add a subtle shadow on hover */
+        .navbar-nav.social-media-icons li a:hover::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /* Circular shadow effect */
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Blue shadow */
+            z-index: -1; /* Send the shadow behind the icon */
+        }
+
+        /* Transition and animation for smoother hover effect */
+        .navbar-nav.social-media-icons li a:hover::before {
+            opacity: 0.8;
+            transition: all 0.4s ease;
+        }
+
+        /* Margin and alignment to keep icons in-line */
+        .navbar-nav.social-media-icons {
+            margin-left: 20px; /* Space between navbar brand and icons */
+        }
+
+        .navbar-nav.social-media-icons li {
+            display: inline-block;
+            position: relative; /* Needed for the shadow effect */
+        }
+
+        /* Other Navbar Items */
+        .navbar-nav.nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav.nav li a {
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .navbar-nav.nav li a:hover {
+            color: #007bff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">Aditya Pathak</a>
+
+            <!-- Social Media Icons -->
+            <ul class="navbar-nav social-media-icons d-flex flex-row">
+                <li class="ftco-animate mr-3">
+                    <a href="https://github.com/adityapathak0007" target="_blank">
+                        <span class="icon-github"></span>
+                    </a>
+                </li>
+                <li class="ftco-animate mr-3">
+                    <a href="https://www.linkedin.com/in/adityapathak07/" target="_blank">
+                        <span class="icon-linkedin"></span>
+                    </a>
+                </li>
+                <li class="ftco-animate mr-3">
+                    <a href="https://www.instagram.com/adityapathak_07/" target="_blank">
+                        <span class="icon-instagram"></span>
+                    </a>
+                </li>
+                <li class="ftco-animate mr-3">
+                    <a href="https://wa.me/8459919830" target="_blank">
+                        <span class="icon-whatsapp"></span>
+                    </a>
+                </li>
+                <li class="ftco-animate">
+                    <a href="https://www.facebook.com/adityapathak07/" target="_blank">
+                        <span class="icon-facebook"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <!-- Collapsible Navbar Links -->
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#certificates" class="nav-link"><span>Certificates</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
@@ -636,6 +760,220 @@
         </p>
     </div>
 </section>
+
+
+<!-- Certificates Section -->
+<section class="ftco-section text-center", id="certificates" style="padding: 60px 0;">
+    <div class="container">
+        <h2 class="display-4 font-weight-bold">Certifications</h2>
+        <h4 class="font-italic mt-4">Showcasing My Achievements and Dedication</h4>
+        <p class="mt-3">Here are some of the certifications that highlight my commitment to continuous learning and expertise in data science, analytics, and more.</p>
+        <br>
+
+        <!-- Certificate Grid -->
+        <div class="row justify-content-center">
+            <!-- Certificate 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/DataScience.jpg" alt="Master's in Data Science Certificate" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/DataAnalytics.jpg" alt="Data Analytics Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/MachineLearning.jpg" alt="Machine Learning Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/Python.jpg" alt="Python Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/PowerBI.jpg" alt="Power BI Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 6 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/Tableau.jpg" alt="Tableau Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 7 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/SQL.jpg" alt="SQL Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 8 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/Internship.jpg" alt="Internship Certification" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+        object-fit: contain; /* Ensures the full certificate is visible without cropping */
+        max-width: 100%;
+        height: auto; /* Adjusts height based on the image */
+        padding: 10px; /* Adds some padding for a neat look */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .ftco-section {
+        padding: 60px 0;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    @media (max-width: 767.98px) {
+        .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+
+<!-- Certificates Section -->
+<section class="ftco-section text-center" , id="certificates" style="padding: 60px 0;">
+    <div class="container">
+        <!-- Certificate Grid -->
+        <div class="row justify-content-center">
+            <!-- Certificate 1 -->
+            <div class="col-md-3 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/CoreJavaCompletion.jpg" alt="Core Java" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="col-md-3 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/CoreJava Participation.jpg" alt="Core Java" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 3 -->
+            <div class="col-md-3 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/JavaScript.jpg" alt="Java Script" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="col-md-3 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100" style="border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: none;">
+                    <img src="Certificates/AIWorkshop.jpg" alt="AI Workshop" class="card-img-top" style="height: auto; max-height: 100%; object-fit: contain; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                </div>
+            </div>
+
+            <!-- Add more certificates here by copying the div structure -->
+
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+        object-fit: contain; /* Ensures the full certificate is visible without cropping */
+        max-width: 100%;
+        height: auto; /* Adjusts height based on the image */
+        padding: 10px; /* Adds some padding for a neat look */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .ftco-section {
+        padding: 60px 0;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    @media (max-width: 767.98px) {
+        .col-md-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .col-md-3 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+
 
 
 <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
