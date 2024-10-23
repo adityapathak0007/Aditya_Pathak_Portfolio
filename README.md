@@ -2,9 +2,8 @@
 
 Welcome to my online portfolio! This website showcases my projects, skills, and experiences in data science and analytics.
 
-- You can view my portfolio online at the following link:
-
-- [Aditya Pathak Portfolio](https://adityapathak0007.github.io/Aditya_Pathak_Portfolio/)
+You can view my portfolio online at the following link:
+[Aditya Pathak Portfolio](https://adityapathak0007.github.io/Aditya_Pathak_Portfolio/)
 
 
 ## Overview
